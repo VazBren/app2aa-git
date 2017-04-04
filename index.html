@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mi segunda Aplicacion Movil</title>
+
+<!-- grupo CSS-->
+<link rel="stylesheet" href="css/bren.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+<!-- grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+</head> 
+ 
+ 
+ <body onLoad="MM_preloadImages('imagenes/Celular.png','imagenes/gamas1.jpg','imagenes/celulares_flexibles.jpg','imagenes/7.jpg','imagenes/att.jpg')">
+     
+     <div data-role="page" id="Principal" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>Telefonîa Celular</h1>
+      </div>
+      <div>
+        <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+        <li class="ui-first-child ui-last-child">
+           <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>¿Que es un télefono celular?</h2>
+              <p>Definicion</p>
+             </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Historia del celular </h2>
+               <p>Evolucion</p>
+              </a>
+             </li>
+             <li class="ui-first-child ui-last-child">
+               <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Clasificación de acuerdo a su gama</h2>
+               <p>Clasificacion</p>
+              </a>
+            </li>
+            <li class="ui-first-child ui-last-child">
+               <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Compañias en México que manejen el servicio de telefonia</h2>
+               <p>Compañias</p>
+             </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+               <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Telefonos del Futuro</h2>
+               <p>Telefonos del futuro</p>
+             </a>
+           </li>
+           </ul>
+           </div>
+           <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+            <div> 
+                <img src="imagenes/imagen9.jpg" width="46" height="46">
+            </div>
+            <div>
+               <h4> Aplicacion Dos </h4>
+               <h4> Brenda Angela Vazquez Ferrer </h4>
+            </div>
+           </div>
+           </div>
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+               <h1>¿Que es un telefono celular? </h1>
+             </div>
+             <div data-role="content" align="center">
+               <div>
+                  <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1>  </h1>
+          <div>
+            <p> Se muestra una imagen </p>
+            <br>
+          </div>
+          <div>
+          <img src="imagenes/baja2.jpg" width="50%" height="50%">
+           </div>
+          </div>
+         </div> 
+         <h2> Un teléfono celular es un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales. Su principal característica es su portabilidad, que permite comunicarse desde casi cualquier lugar. Aunque su principal función es la comunicación de voz, como el teléfono convencional, su rápido desarrollo ha incorporado otras funciones como son cámara fotográfica, agenda, acceso a internet, reproducción de video e incluso GPS y reproductor mp3. </h2> 
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/Celular.png',1)"><img src="imagenes/baja2.jpg" width="700" height="467" id="Image5"></a></p>
+         
+               </div>
+              </div> 
+       <div data-role="footer" data-theme="b" data-position="fixed">
+       
+                <h4> Aplicacion Dos, BAVF </h4>
+              </div>
+             </div>
+            
+              
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+               <h1>Historia del Telefono </h1>
+             </div>
+             
+   <div data-role="content" align="center">
+               <div>
+                 <h2> El teléfono es un dispositivo de telecomunicación diseñado para transmitir conversaciones por medio de señales eléctricas. El visionario hombre que inventó el teléfono fue Antonio Meucci que lo bautizó como teletrófono, entre otras innovaciones técnicas.  </h2>
+                 
+                 <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1>  </h1>
+          <div>
+            <p> Se muestra una imagen </p>
+            <br>
+          </div>
+          <div>
+          <img src="imagenes/evolucion.jpg" width="50%" height="50%">
+           </div>
+          </div>
+         </div>  
+     </div>
+              </div> 
+       <div data-role="footer" data-theme="b" data-position="fixed">
+       
+                <h4> Aplicacion Dos, BAVF </h4>
+              </div>
+             </div>
+                          
+              
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+               <h1>lasificación de acuerdo a su gama</h1>
+             </div>
+             <div data-role="content" align="center">
+               <div>
+                <h2> Gama Baja </h2>
+                  <h4> Son aquellos que poseen un uso muy limitado, incluso pueden llegar a cumplir la función de realizar llamadas. La pantalla de estos dispositivos carece de gran resolución y tamaño, siendo también en algunos equipos monocromática. los celulares de de gama baja son muy recomendados para gente de avanzada edad.</h4>
+                 <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1>   </h1>
+          <div>
+            <p> Se muestra una imagen : </p>
+            <br>
+          </div>
+          <div>
+            <img src="imagenes/baja3.jpg" width="50%" height="50%">
+           </div>
+          </div>
+         </div>
+<h2> Gama Media </h2>
+<h4> Este grupo es el mas comercializado, debido a la buena relación costo-prestaciones, por lo general se adquiere este tipo de móviles por el motivo de querer escuchar música MP3.</h4>
+<div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1>   </h1>
+          <div>
+            <p> Se muestra una imagen</p>
+            <br>
+          </div>
+          <div>
+            <img src="imagenes/media3.jpg" width="25%" height="20%">
+           </div>
+          </div>
+         </div>
+<h2> Gama Alta </h2>
+  <h4>Celulares para un publico que sabe lo que quiere, grandes prestaciones tales como GPS (posicionamiento global), Wifi (Internet inalámbrico) camara fotográfica superior a 3MP con excelente calidad y pantallas de gran resolución. </h4>
+  <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1>  </h1>
+          <div>
+            <p> Se muestra una imagen </p>
+            <br>
+          </div>
+          <div>
+                        <img src="imagenes/alta3.jpg" width="25%" height="20%">
+            </div>
+          </div>
+         </div>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/gamas1.jpg',1)"><img src="imagenes/gamas2.jpg" width="628" height="396" id="Image9"></a> </div>
+         </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+    <h4> Aplicacion Dos, BAVF </h4>
+              </div>
+              </div>
+             
+             
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+               <h1>Compañias en México que manejen el servicio de telefonia</h1>
+             </div>
+             <div data-role="content" align="center">
+               <div>
+                <h2>Telcel</h2>
+                <h4>Telcel forma parte del grupo América Móvil, el mayor proveedor de comunicación celular en Latinoamérica y el tercer lugar a nivel mundial. Cuenta con más de 328 millones de clientes y está presente en 18 países de América. Tan sólo en nuestro continente, América Móvil cuenta con mas de 30 millones de líneas fijas y 262.9 millones de suscriptores móviles.</h4>
+  <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1> </h1>
+          <div>
+            <p> se muestra una imagen </p>
+            <br>
+          </div>
+          <div>
+                        <img src="imagenes/telcel.jpg" width="25%" height="20%">
+            </div>
+          </div>
+         </div>
+         <h2>Movistar</h2>
+         <h4> Movistar España, conocida simplemente como Movistar, es el primer operador de telefonía fija, telefonía móvil, televisión por suscripción (Movistar+) e internet (fibra y 4G) </h4>  
+         <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1>   </h1>
+          <div>
+            <p> se muestra una imagen </p>
+            <br>
+          </div>
+          <div>
+                        <img src="imagenes/movistar.jpg" width="25%" height="20%">
+            </div>
+          </div>
+         </div>   
+         <h2>Unefon</h2>  
+         <h4>Unefón es una compañía mexicana de telefonía móvil propiedad de AT&T, la cual se dedica a ofrecer únicamente el esquema de cobro de prepago.</h4>
+     <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1>  </h1>
+          <div>
+            <p> se muestra una imagen </p>
+            <br>
+          </div>
+          <div>
+                        <img src="imagenes/unefon.png" width="25%" height="20%">
+            </div>
+          </div>
+         </div>   
+         <h2>Iusacell</h2>
+         <h4> Iusacell es el tercer mayor operador de telefonía móvil en México por número de usuarios, por detrás de Movistar y Telcel.</h4>  
+     <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1>  </h1>
+          <div>
+            <p> se muestra una imagen </p>
+            <br>
+          </div>
+          <div>
+                        <img src="imagenes/iusacell.png" width="25%" height="20%">
+            </div>
+          </div>
+         </div>  
+         <h2>AT&T </h2>
+         <h4>Es una compañía estadounidense de telecomunicaciones.2 Provee servicios de voz, video, datos e Internet a negocios, clientes y agencias del gobierno.</h4> 
+         <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1>  </h1>
+          <div>
+            <p> se muestra una imagen </p>
+            <br>
+          </div>
+          <div>
+                        <img src="imagenes/att.jpg" width="25%" height="20%">
+            </div>
+          </div>
+         </div> 
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/att.jpg',1)"><img src="imagenes/comp.jpg" width="425" height="285" id="Image"></a> </div>
+              </div> 
+            <div data-role="footer" data-theme="b" data-position="fixed">
+              <h4> Aplicación Dos, BAVF</h4>
+             </div>
+             </div>
+             
+             
+  <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+               <h1> Telefonos del futuro  </h1>
+             </div>
+ <div data-role="content" align="center">
+              <div>
+                <h2> Pantallas Flexibles Samsung </h2> </div>
+                <h4> Una pantalla flexible es una pequeña variación de los actuales paneles de imagen que se venden comercialmente, con la peculiaridad de poder ser dobladas. Se han desarrollado transistores de película delgada (Thin-film transistor) de nanotubos de carbono para crear dispositivos flexibles y transparentes de alta definicion las pantallas flexibles</h4>
+                 <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1> </h1>
+          <div>
+            <p> se muestra una imagen </p>
+            <br>
+          </div>
+          <div>
+                        <img src="imagenes/flexi.jpg" width="25%" height="20%">
+            </div>
+          </div>
+         </div>
+         <h2> El Proyecto Ara</h2>  
+         <h4> Google tiene la idea de que los teléfonos jamás se queden obsoletos, y que puedan actualizar su software y su hardware sin mayores problemas para estar siempre a la última. Así nació el Proyecto Ara, que pretende construir teléfonos que, literalmente, sean armables con piezas intercambiables según las necesidades de cada usuario.</h4>
+        <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1></h1>
+          <div>
+            <p> se muestra una imagen </p>
+            <br>
+          </div>
+          <div>
+                        <img src="imagenes/ara.jpg" width="25%" height="20%">
+            </div>
+          </div>
+         </div> 
+         <h2> Celulares en tu muñeca</h2>
+         <h4> Con capacidad de realizar y recibir llamadas y mensajes gracias a su chip SIM, el reloj que lanzó el cantante Will.i.am ciertamente abre la puerta a que los celulares del futuro se lleven en la muñeca.</h4>  
+         <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1></h1>
+          <div>
+            <p> se muestra una imagen </p>
+            <br>
+          </div>
+          <div>
+                        <img src="imagenes/muñeca.png" width="25%" height="20%">
+            </div>
+          </div>
+         </div>   
+         <h2> iPhone 7</h2>
+         <h4> Pantalla de cristal de zafiro, cámara con dos lentes y un sensor físico 3D parecido al del Apple Watch para medir presión sanguínea y ritmo cardíaco son algunos de los rumores que hasta el momento se conocen y que sin embargo, no parecen demasiado futuristas. También se sabe que el siguiente teléfono de Apple conservaría tamaño y diseño y sólo cambiaría las cosas en su interior.</h4>
+           <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1></h1>
+          <div>
+            <p> Se muestra una imagen </p>
+            <br>
+          </div>
+          <div>
+                        <img src="imagenes/7.jpg" width="25%" height="20%">
+            </div>
+          </div>
+         </div>           
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/celulares_flexibles.jpg',1)"><img src="imagenes/celular del futuro.jpg" width="550" height="550" id="Image19"></a>
+<div data-role="footer" data-theme="b" data-position="fixed">
+      <h4> Aplicación Dos, BAVF</h4>
+      
+             </div>    
+             </div>
+               
+</body>
+</html>
